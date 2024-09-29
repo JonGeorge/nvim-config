@@ -100,25 +100,26 @@ nmap <C-Right> :vertical resize +2<CR>
 "Add a single character from normal mode
 nnoremap <C-i> i_<Esc>r
 
-"Plugins
+"Plugins (using Vim-Plug)
 "Plugin files stored in plugged folder
 "Plugin config stored in plugins folder
 call plug#begin('~/.config/nvim/plugged')
-    source ~/.config/nvim/plugins/catppuccin.vim
+   "source ~/.config/nvim/plugins/catppuccin.vim
    "source ~/.config/nvim/plugins/nightfly.vim
     source ~/.config/nvim/plugins/polyglot.vim
     source ~/.config/nvim/plugins/coc.vim
+    source ~/.config/nvim/plugins/rose-pine.vim    
 call plug#end()
 
-colorscheme catppuccin "catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+colorscheme rose-pine
 
 "let g:nightflyUnderlineMatchParen = v:true
 "let g:nightflyWinSeparator = 2
 "colorscheme nightfly
 
-set background=dark
+"set background=dark
 "set background=light
 
-set termguicolors
-hi! Normal ctermbg=NONE guibg=NONE
+"set termguicolors
+"hi! Normal ctermbg=NONE guibg=NONE
 "hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
